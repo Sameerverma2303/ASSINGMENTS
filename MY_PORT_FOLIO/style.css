@@ -864,7 +864,7 @@ a {
 
 .contact-info-card,
 .contact-form-card {
-  padding: 32px;
+  padding:32px;
 }
 
 .contact-info-card h3,
@@ -919,7 +919,7 @@ a {
 .social-wrapper {
   margin-top: 28px;
   border-top: 1px solid var(--border-color);
-  padding-top: 22px;
+  padding-top: 47px;
 }
 
 .social-label {
