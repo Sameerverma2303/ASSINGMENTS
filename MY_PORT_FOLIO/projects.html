@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Sameer Developer Portfolio</title>
+  <meta name="description" content="Explore Sameer's software engineering and data analytics projects built with React, TypeScript, Python, NumPy, Pandas, and JavaScript.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Outfit:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Ambient Background Glows -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+
+  <!-- ==========================================
+       1. NAVIGATION BAR
+       ========================================== -->
+  <header class="header">
+    <div class="container navbar">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">&lt;/&gt;</span>
+        <span class="logo-text">Sameer<span class="gradient-text">.Dev</span></span>
+      </a>
+      
+      <div class="nav-right">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link"><i class="fa-solid fa-house"></i> Home</a></li>
+          <li><a href="projects.html" class="nav-link active"><i class="fa-solid fa-code"></i> Projects</a></li>
+          <li><a href="contact.html" class="nav-link"><i class="fa-solid fa-paper-plane"></i> Contact</a></li>
+        </ul>
+        <button id="theme-btn" class="theme-toggle-btn" aria-label="Toggle dark/light theme">
+          <i class="fa-solid fa-moon" id="theme-icon"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================
+       2. PAGE HEADER BANNER & FILTERS
+       ========================================== -->
+  <section class="section page-banner-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">&lt;my_work&gt;</span>
+        <h1 class="section-title">Portfolio Projects</h1>
+        <p class="section-subtitle">Browse through my sample projects covering Full-Stack Web Development, Data Science, and TypeScript applications.</p>
+      </div>
+
+      <!-- Filter Buttons Bar -->
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All Projects (6)</button>
+        <button class="filter-btn" data-filter="data-science">Data Science (2)</button>
+        <button class="filter-btn" data-filter="web-app">Web Apps (2)</button>
+        <button class="filter-btn" data-filter="typescript">TypeScript & React (2)</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       3. 6 DETAILED SAMPLE PROJECTS GRID
+       ========================================== -->
+  <section class="section projects-page-section">
+    <div class="container">
+      <div class="projects-grid" id="projects-container">
+
+        <!-- Project 1: Data Analytics Dashboard -->
+        <article class="glass-card project-card" data-category="data-science">
+          <div class="project-image-box">
+            <img src="assets/images/project1.png" alt="Data Analytics Dashboard" class="project-img">
+            <span class="project-badge">Data Science</span>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">1. Data Analytics & Metrics Dashboard</h3>
+            <p class="project-desc">
+              An interactive data visualization application processing business dataset records using 
+              <strong>Python, NumPy, Pandas</strong> for backend processing and modern HTML/CSS for responsive dashboard layouts.
+            </p>
+            <div class="tech-tags">
+              <span class="tag">Python</span>
+              <span class="tag">NumPy</span>
+              <span class="tag">Pandas</span>
+              <span class="tag">JavaScript</span>
+            </div>
+            <div class="project-actions">
+              <a href="#" class="btn btn-primary demo-btn" data-name="Data Analytics Dashboard">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+              </a>
+              <a href="https://github.com" target="_blank" rel="noopener" class="btn btn-outline">
+                <i class="fa-brands fa-github"></i> Code
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2: E-Commerce Storefront -->
+        <article class="glass-card project-card" data-category="web-app">
+          <div class="project-image-box">
+            <img src="assets/images/project2.png" alt="E-Commerce Web Application" class="project-img">
+            <span class="project-badge">Web App</span>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">2. Modern E-Commerce Storefront</h3>
+            <p class="project-desc">
+              A responsive e-commerce web application featuring reactive shopping cart state management, 
+              item filtering, and clean CSS styling built with <strong>React, JavaScript, and CSS3</strong>.
+            </p>
+            <div class="tech-tags">
+              <span class="tag">React</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">CSS3</span>
+              <span class="tag">HTML5</span>
+            </div>
+            <div class="project-actions">
+              <a href="#" class="btn btn-primary demo-btn" data-name="Modern E-Commerce Storefront">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+              </a>
+              <a href="https://github.com" target="_blank" rel="noopener" class="btn btn-outline">
+                <i class="fa-brands fa-github"></i> Code
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3: Smart Task & Kanban Manager -->
+        <article class="glass-card project-card" data-category="typescript">
+          <div class="project-image-box">
+            <img src="assets/images/project3.png" alt="Task Management Application" class="project-img">
+            <span class="project-badge">TypeScript & React</span>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">3. Smart Task & Kanban Manager</h3>
+            <p class="project-desc">
+              A clean task management application for organizing daily developer tasks with drag-and-drop support, 
+              categories, and localStorage persistence built in <strong>TypeScript & JavaScript</strong>.
+            </p>
+            <div class="tech-tags">
+              <span class="tag">TypeScript</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">HTML5</span>
+              <span class="tag">CSS Grid</span>
+            </div>
+            <div class="project-actions">
+              <a href="#" class="btn btn-primary demo-btn" data-name="Smart Task Manager">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+              </a>
+              <a href="https://github.com" target="_blank" rel="noopener" class="btn btn-outline">
+                <i class="fa-brands fa-github"></i> Code
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 4: Predictive Machine Learning App -->
+        <article class="glass-card project-card" data-category="data-science">
+          <div class="project-image-box">
+            <img src="assets/images/project4.png" alt="Predictive Machine Learning App" class="project-img">
+            <span class="project-badge">Data Science</span>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">4. Predictive ML Web Application</h3>
+            <p class="project-desc">
+              A machine learning web tool trained on sales data pipelines using <strong>Python, Pandas, Scikit-Learn</strong>, and interactive Matplotlib chart rendering.
+            </p>
+            <div class="tech-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Pandas</span>
+              <span class="tag">Scikit-Learn</span>
+              <span class="tag">Matplotlib</span>
+            </div>
+            <div class="project-actions">
+              <a href="#" class="btn btn-primary demo-btn" data-name="Predictive ML Application">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+              </a>
+              <a href="https://github.com" target="_blank" rel="noopener" class="btn btn-outline">
+                <i class="fa-brands fa-github"></i> Code
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 5: Social Media Analytics Dashboard -->
+        <article class="glass-card project-card" data-category="typescript">
+          <div class="project-image-box">
+            <img src="assets/images/project5.png" alt="Social Media Analytics Dashboard" class="project-img">
+            <span class="project-badge">TypeScript & React</span>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">5. Social Media Analytics Platform</h3>
+            <p class="project-desc">
+              An analytics dashboard tracking user engagement metrics, post reach, and audience demographic insights built using <strong>TypeScript, React, Node.js</strong>.
+            </p>
+            <div class="tech-tags">
+              <span class="tag">TypeScript</span>
+              <span class="tag">React</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">Chart.js</span>
+            </div>
+            <div class="project-actions">
+              <a href="#" class="btn btn-primary demo-btn" data-name="Social Analytics Platform">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+              </a>
+              <a href="https://github.com" target="_blank" rel="noopener" class="btn btn-outline">
+                <i class="fa-brands fa-github"></i> Code
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 6: Crypto & Stock Portfolio Tracker -->
+        <article class="glass-card project-card" data-category="web-app">
+          <div class="project-image-box">
+            <img src="assets/images/project6.png" alt="Financial Portfolio Tracker" class="project-img">
+            <span class="project-badge">Web App</span>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">6. Financial & Stock Tracker</h3>
+            <p class="project-desc">
+              A real-time financial tracking application pulling asset values, calculating profit margins, and plotting portfolio distribution charts using <strong>JavaScript & React</strong>.
+            </p>
+            <div class="tech-tags">
+              <span class="tag">JavaScript</span>
+              <span class="tag">React</span>
+              <span class="tag">REST API</span>
+              <span class="tag">CSS3</span>
+            </div>
+            <div class="project-actions">
+              <a href="#" class="btn btn-primary demo-btn" data-name="Financial Tracker App">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+              </a>
+              <a href="https://github.com" target="_blank" rel="noopener" class="btn btn-outline">
+                <i class="fa-brands fa-github"></i> Code
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       4. CALL TO ACTION
+       ========================================== -->
+  <section class="section cta-section">
+    <div class="container">
+      <div class="glass-card cta-card">
+        <h2 class="cta-title">Like What You See?</h2>
+        <p class="cta-desc">I am available for new web application and data science projects. Let's discuss your ideas!</p>
+        <div class="cta-buttons">
+          <a href="contact.html" class="btn btn-primary">
+            <i class="fa-solid fa-paper-plane"></i> Contact Me Now
+          </a>
+          <a href="index.html" class="btn btn-outline">
+            <i class="fa-solid fa-house"></i> Return to Home
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       5. FOOTER
+       ========================================== -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <span class="logo-icon">&lt;/&gt;</span>
+          <span class="logo-text">Sameer<span class="gradient-text">.Dev</span></span>
+        </a>
+      </div>
+      <p class="footer-copy">&copy; <span id="year">2026</span> Sameer. Portfolio built with HTML, CSS & JavaScript.</p>
+      <a href="#top" class="back-to-top" title="Back to top"><i class="fa-solid fa-arrow-up"></i></a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
